@@ -792,3 +792,29 @@ const fichas = {
     ['Panturrilha no degrau', 'Agachamento livre', 'Elevação lateral com garrafa', 'Remada unilateral com mochila', 'Abdominal', 'Prancha'],
   ],
 };
+
+const descricoesExercicios = {
+  "Leg press": "Sente-se na máquina de leg press, posicione os pés na plataforma na largura dos ombros, empurre a plataforma estendendo as pernas sem travar os joelhos e volte controladamente à posição inicial.",
+  "Panturrilha em pé": "Fique em pé na máquina ou com halteres, suba na ponta dos pés elevando os calcanhares, contraia as panturrilhas e desça lentamente até a posição inicial.",
+  "Desenvolvimento com halteres": "Sentado ou em pé, segure um haltere em cada mão na altura dos ombros, empurre os halteres para cima até estender os braços, e retorne lentamente.",
+  "Elevação lateral": "Com halteres nas mãos ao lado do corpo, eleve os braços lateralmente até a altura dos ombros e retorne controladamente.",
+  "Abdominal oblíquo": "Deite-se de lado, com o corpo alinhado, eleve o tronco e a parte superior das pernas, contraindo os músculos oblíquos.",
+  "Abdominal máquina": "Sente-se na máquina de abdominal, segure as alças, contraia o abdômen para flexionar o tronco e retorne lentamente.",
+  "Cadeira extensora": "Sentado na máquina, posicione os pés sob o apoio, estenda as pernas até a completa extensão dos joelhos e volte controladamente.",
+  "Agachamento livre": "Com barra nas costas, agache flexionando os joelhos e quadris até que as coxas fiquem paralelas ao chão, mantendo o tronco ereto, e volte à posição inicial.",
+  "Supino reto": "Deitado no banco reto, segure a barra com as mãos na largura dos ombros, abaixe a barra controladamente até o peito e empurre para cima até estender os braços.",
+  "Tríceps corda": "Na polia alta com corda, puxe a corda para baixo estendendo os braços e contraindo o tríceps, retornando lentamente.",
+  "Prancha lateral": "Deite-se de lado apoiando o antebraço no chão, mantenha o corpo alinhado e eleve o quadril, sustentando a posição.",
+  "Desenvolvimento com barra": "Segure a barra na altura dos ombros, empurre-a para cima até estender os braços e retorne controladamente.",
+  "Rosca direta": "Com barra ou halteres, flexione os cotovelos elevando o peso até a altura dos ombros e retorne lentamente.",
+  "Remada curvada": "Com barra, flexione o tronco para frente, puxe a barra em direção ao abdômen contraindo as costas e volte controladamente.",
+  "Puxada frontal": "Na polia alta, puxe a barra até a altura do peito, contraindo as costas e retornando devagar.",
+  "Cadeira abdutora": "Sentado na máquina, abra as pernas contra a resistência para trabalhar os músculos abdutores e retorne lentamente.",
+  "Cadeira adutora": "Sentado na máquina, junte as pernas contra a resistência para trabalhar os músculos adutores e volte controladamente.",
+  "Flexão de braço": "Deitado de barriga para baixo, apoie as mãos no chão e empurre o corpo para cima estendendo os braços, depois retorne flexionando-os.",
+  "Abdominal tradicional": "Deitado de costas, flexione o tronco levando o peito em direção aos joelhos e retorne lentamente.",
+  "Elevação de quadril": "Deitado de costas com os pés apoiados, eleve o quadril contraindo glúteos e retorne à posição inicial.",
+  "Stiff": "Com barra ou halteres, mantenha as pernas semi-flexionadas, incline o tronco para frente com a coluna reta, e volte à posição ereta.",
+  "Mesa flexora": "A mesa flexora é um equipamento para fortalecer os músculos posteriores da coxa. Sente-se com o abdômen firme, ajuste o apoio sobre os tornozelos e flexione os joelhos contra a resistência, controlando o movimento na subida e descida para evitar lesões."
+};
+
