@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Treino Personalizada</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Monte sua Ficha de Treino</h1>
+    <form id="formulario">
+      <label>1. Gênero:</label>
+      <select id="genero" required>
+        <option value="">Selecione</option>
+        <option value="homem">Homem</option>
+        <option value="mulher">Mulher</option>
+      </select>
+
+      <label>2. Nível de experiência:</label>
+      <select id="experiencia" required>
+        <option value="">Selecione</option>
+        <option value="iniciante">Iniciante</option>
+        <option value="intermediario">Intermediário</option>
+        <option value="avancado">Avançado</option>
+      </select>
+
+      <label>3. Condição física:</label>
+      <select id="condicao" required>
+        <option value="">Selecione</option>
+        <option value="boa">Boa</option>
+        <option value="mediana">Mediana</option>
+        <option value="ruim">Ruim</option>
+      </select>
+
+      <label>4. Possui lesão?</label>
+      <select id="lesao" required>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <label>5. Dias disponíveis para treino:</label>
+      <select id="dias" required>
+        <option value="">Selecione</option>
+        <option value="2">2 dias</option>
+        <option value="3">3 dias</option>
+        <option value="4">4 dias</option>
+        <option value="5">5 dias</option>
+      </select>
+
+      <label>6. Tem acesso à academia?</label>
+      <select id="academia" required>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <button type="submit">Gerar Ficha</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="fichas.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
