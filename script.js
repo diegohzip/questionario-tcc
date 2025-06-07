@@ -8,18 +8,17 @@ const perguntas = [
 ];
 
 const totalPerguntas = perguntas.length;
-
 const progressBar = document.getElementById("progressBar");
 const formulario = document.getElementById("formulario");
 const resultadoDiv = document.getElementById("resultado");
 
-// Função para atualizar a barra de progresso
+// Atualiza a barra de progresso
 function atualizarProgresso(atual) {
   const percentual = (atual / totalPerguntas) * 100;
   progressBar.style.width = percentual + "%";
 }
 
-// Função para mostrar próxima pergunta
+// Mostra a próxima pergunta
 function mostrarPergunta(index) {
   if (index < totalPerguntas) {
     const proxPergunta = document.getElementById(`pergunta${index + 1}`);
@@ -27,12 +26,11 @@ function mostrarPergunta(index) {
       proxPergunta.style.display = "block";
     }
   } else {
-    // Todas respondidas, mostrar botão enviar
     document.getElementById("submitBtn").style.display = "block";
   }
 }
 
-// Inicialização: só mostra a primeira pergunta
+// Oculta todas as perguntas exceto a primeira
 for (let i = 2; i <= totalPerguntas; i++) {
   const p = document.getElementById(`pergunta${i}`);
   if (p) p.style.display = "none";
@@ -40,11 +38,10 @@ for (let i = 2; i <= totalPerguntas; i++) {
 document.getElementById("submitBtn").style.display = "none";
 atualizarProgresso(0);
 
-// Adicionar evento de mudança para cada select
+// Eventos de mudança nos selects
 perguntas.forEach((id, idx) => {
   const select = document.getElementById(id);
   select.addEventListener("change", () => {
-    // Caso selecione "sim" em lesão, mostrar aviso e bloquear
     if (id === "lesao" && select.value === "sim") {
       resultadoDiv.innerHTML = `
         <h2>Aviso Importante</h2>
@@ -53,23 +50,17 @@ perguntas.forEach((id, idx) => {
           Recomendamos que você procure um profissional da saúde ou um educador físico.
         </p>
       `;
-      // Esconder perguntas posteriores e botão enviar
       for (let i = idx + 1; i < totalPerguntas; i++) {
         const p = document.getElementById(`pergunta${i + 1}`);
         if (p) p.style.display = "none";
       }
       document.getElementById("submitBtn").style.display = "none";
-      // Atualizar barra até essa pergunta
       atualizarProgresso(idx + 1);
-      return; // para não liberar próximas perguntas
+      return;
     } else {
-      // Limpa aviso se lesão não for "sim"
-      if (id === "lesao") {
-        resultadoDiv.innerHTML = "";
-      }
+      if (id === "lesao") resultadoDiv.innerHTML = "";
     }
 
-    // Atualizar barra
     let respondidas = 0;
     for (let i = 0; i < totalPerguntas; i++) {
       const val = document.getElementById(perguntas[i]).value;
@@ -77,7 +68,6 @@ perguntas.forEach((id, idx) => {
     }
     atualizarProgresso(respondidas);
 
-    // Mostrar próxima pergunta se atual respondida e não for lesão "sim"
     if (select.value !== "") {
       mostrarPergunta(idx + 1);
     } else {
@@ -91,7 +81,7 @@ perguntas.forEach((id, idx) => {
   });
 });
 
-// Submit - mantém a lógica original da ficha
+// Submit do formulário
 formulario.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -125,83 +115,75 @@ formulario.addEventListener("submit", function (e) {
   }
 
   let html = `<h2>Ficha de Treino - ${dias} dias/semana</h2>`;
-  
   const fichaCards = document.getElementById("ficha-cards");
-fichaCards.innerHTML = ""; // Limpa conteúdo anterior
+  fichaCards.innerHTML = "";
 
-ficha.forEach((dia, index) => {
-  const card = document.createElement("div");
-  card.classList.add("ficha-card");
-  card.innerHTML = `<h3>Dia ${index + 1}</h3>`;
-  
-  const ul = document.createElement("ul");
-  dia.forEach(exercicio => {
-    const li = document.createElement("li");
-    li.textContent = exercicio;
-    li.style.cursor = "pointer";
-    li.addEventListener("click", () => {
-      mostrarDescricaoExercicio(exercicio);
+  ficha.forEach((dia, index) => {
+    const card = document.createElement("div");
+    card.classList.add("ficha-card");
+    card.innerHTML = `<h3>Dia ${index + 1}</h3>`;
+
+    const ul = document.createElement("ul");
+    dia.forEach(exercicio => {
+      const li = document.createElement("li");
+      li.innerHTML = 
+        `<span class="exercicio-nome">${exercicio}</span>
+        <img class="flecha-direita" src="imagens/flecha.png" alt="→" />`
+      ;
+      li.style.cursor = "pointer";
+      li.addEventListener("click", () => {
+        mostrarDescricaoExercicio(exercicio);
+      });
+      ul.appendChild(li);
     });
-    ul.appendChild(li);
+
+    card.appendChild(ul);
+    fichaCards.appendChild(card);
   });
 
-  card.appendChild(ul);
-  fichaCards.appendChild(card);
+  resultadoDiv.innerHTML = html;
 });
 
-function mostrarDescricaoExercicio(exercicio) {
-  const descricao = descricoesExercicios[exercicio] || "Descrição não disponível para este exercício.";
-  
-  // Criar o pop-up básico
-  const popup = document.createElement("div");
-  popup.style.position = "fixed";
-  popup.style.top = "50%";
-  popup.style.left = "50%";
-  popup.style.transform = "translate(-50%, -50%)";
-  popup.style.backgroundColor = "#fff";
-  popup.style.border = "2px solid #000";
-  popup.style.padding = "20px";
-  popup.style.zIndex = 1000;
-  popup.style.maxWidth = "300px";
-  popup.style.boxShadow = "0 0 10px rgba(0,0,0,0.5)";
-  
-  popup.innerHTML = `
-    <h3>${exercicio}</h3>
-    <p>${descricao}</p>
-    <button id="fecharPopup">Fechar</button>
-  `;
-
-  document.body.appendChild(popup);
-
-  document.getElementById("fecharPopup").addEventListener("click", () => {
-    popup.remove();
-  });
-}
-
+// Pop-up da descrição
 const popup = document.getElementById("popupDescricao");
 const descricaoTexto = document.getElementById("descricaoTexto");
 const fecharPopup = document.getElementById("fecharPopup");
 
 function mostrarDescricaoExercicio(exercicio) {
   const descricao = descricoesExercicios[exercicio] || "Descrição não disponível.";
-  descricaoTexto.textContent = descricao;
-  
-  // Adiciona classe para mostrar o pop-up com transição
+  const linksYoutube = {
+    "Agachamento livre": "https://www.youtube.com/watch?v=1xMaFs0L3ao",
+    "Leg press": "https://www.youtube.com/watch?v=IZxyjW7MPJQ",
+    "Supino reto": "https://www.youtube.com/watch?v=rT7DgCr-3pg",
+    "Rosca direta": "https://www.youtube.com/watch?v=kwG2ipFRgfo",
+    "Elevação lateral": "https://www.youtube.com/watch?v=kDqklk1ZESo",
+    "Panturrilha em pé": "https://www.youtube.com/watch?v=-M4-G8p8fmc",
+    "Tríceps corda": "https://www.youtube.com/watch?v=vB5OHsJ3EME",
+    "Stiff": "https://www.youtube.com/watch?v=3B2CAVOe3Fg",
+    "Desenvolvimento com halteres": "https://www.youtube.com/watch?v=B-aVuyhvLHU",
+    "Abdominal máquina": "https://www.youtube.com/watch?v=vPKXFarXbys",
+    "Abdominal oblíquo": "https://www.youtube.com/watch?v=OSiN1iwu3A4",
+    "Prancha": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
+    "Prancha lateral": "https://www.youtube.com/watch?v=K2VljzCC16g"
+  };
+  const videoLink = linksYoutube[exercicio] || "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+  descricaoTexto.innerHTML = `
+    <strong>${exercicio}</strong><br><br>
+    ${descricao}<br><br>
+    <label>Tutorial em vídeo:</label><br>
+    <input type="text" class="video-link" value="${videoLink}" readonly onclick="window.open('${videoLink}', '_blank')" />
+  `;
+
   popup.classList.add("show");
 }
 
-// Fecha o pop-up com transição
 fecharPopup.addEventListener("click", () => {
   popup.classList.remove("show");
 });
 
-// Fecha o pop-up ao clicar fora do conteúdo
 popup.addEventListener("click", (event) => {
   if (event.target === popup) {
     popup.classList.remove("show");
   }
-});
-
-
-  resultadoDiv.innerHTML = html;
 });

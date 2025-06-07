@@ -791,6 +791,250 @@ const fichas = {
     ['Afundo', 'Agachamento livre', 'Rosca com mochila', 'Elevação lateral com garrafa', 'Canivete', 'Prancha lateral'],
     ['Panturrilha no degrau', 'Agachamento livre', 'Elevação lateral com garrafa', 'Remada unilateral com mochila', 'Abdominal', 'Prancha'],
   ],
+
+  /* 6 dias */
+
+  // Homem - Iniciante - Boa - 6 dias - academia SIM
+  "homem-iniciante-boa-6-sim": [
+    ['Leg press', 'Panturrilha em pé', 'Supino reto com halteres', 'Elevação lateral', 'Abdominal prancha', 'Abdominal infra'],
+    ['Agachamento livre', 'Mesa flexora', 'Puxada frontal', 'Rosca direta com barra', 'Prancha lateral', 'Elevação de pernas'],
+    ['Stiff com halteres', 'Remada baixa', 'Desenvolvimento com halteres', 'Tríceps corda', 'Abdominal supra', 'Prancha abdominal'],
+    ['Cadeira extensora', 'Panturrilha sentada', 'Supino inclinado', 'Elevação frontal', 'Abdominal oblíquo', 'Abdominal bicicleta'],
+    ['Agachamento sumô', 'Mesa flexora', 'Puxada alta', 'Rosca martelo', 'Prancha com elevação de pernas', 'Abdominal infra'],
+    ['Leg press unilateral', 'Glúteos na polia', 'Remada unilateral', 'Tríceps banco', 'Abdominal prancha lateral', 'Elevação de quadril']
+  ],
+
+  // Homem - Iniciante - Boa - 6 dias - academia NÃO
+  "homem-iniciante-boa-6-nao": [
+    ['Agachamento peso corporal', 'Elevação de panturrilha no degrau', 'Flexão de braço com joelhos', 'Rosca com elástico', 'Prancha estática', 'Abdominal infra'],
+    ['Avanço sem peso', 'Ponte de glúteos', 'Remada invertida com elástico', 'Tríceps testa com elástico', 'Prancha lateral', 'Abdominal bicicleta'],
+    ['Agachamento sumô', 'Mesa flexora improvisada', 'Desenvolvimento com elástico', 'Remada baixa com elástico', 'Abdominal prancha', 'Elevação de pernas'],
+    ['Agachamento unilateral', 'Flexão de braço tradicional', 'Remada invertida com elástico', 'Elevação lateral com elástico', 'Prancha lateral', 'Abdominal supra'],
+    ['Ponte glútea', 'Avanço com apoio', 'Tríceps banco', 'Rosca direta com elástico', 'Prancha abdominal', 'Abdominal oblíquo'],
+    ['Agachamento peso corporal', 'Flexão de braço', 'Remada invertida', 'Rosca martelo com elástico', 'Prancha lateral', 'Elevação de pernas']
+  ],
+
+  // Homem - Intermediário - Boa - 6 dias - academia SIM
+  "homem-intermediario-boa-6-sim": [
+    ['Agachamento livre', 'Panturrilha em pé', 'Supino reto barra', 'Elevação lateral', 'Prancha com toque no ombro', 'Abdominal infra'],
+    ['Stiff', 'Mesa flexora', 'Puxada frente', 'Rosca direta barra', 'Prancha lateral', 'Elevação de pernas'],
+    ['Leg press', 'Glúteos polia baixa', 'Desenvolvimento com halteres', 'Tríceps corda', 'Abdominal supra', 'Prancha abdominal'],
+    ['Cadeira extensora', 'Panturrilha sentada', 'Supino inclinado', 'Elevação frontal', 'Abdominal oblíquo', 'Abdominal bicicleta'],
+    ['Avanço com barra', 'Mesa flexora', 'Remada unilateral', 'Rosca martelo', 'Prancha com elevação de pernas', 'Abdominal infra'],
+    ['Agachamento sumô', 'Glúteos na polia', 'Remada baixa', 'Tríceps testa', 'Abdominal prancha lateral', 'Elevação de quadril']
+  ],
+
+  // Homem - Intermediário - Boa - 6 dias - academia NÃO
+  "homem-intermediario-boa-6-nao": [
+    ['Agachamento peso corporal', 'Elevação de panturrilha no degrau', 'Rosca direta com elástico', 'Desenvolvimento com elástico', 'Prancha abdominal curta', 'Elevação de pernas leve'],
+    ['Avanço sem peso', 'Ponte de glúteos', 'Tríceps testa com elástico', 'Flexão de braço leve', 'Prancha lateral curta', 'Abdominal infra leve'],
+    ['Agachamento sumô leve', 'Mesa flexora improvisada leve', 'Desenvolvimento com elástico leve', 'Remada baixa com elástico leve', 'Abdominal máquina improvisada leve', 'Elevação de pernas leve'],
+    ['Agachamento unilateral leve', 'Flexão de braço com joelhos leve', 'Remada invertida com elástico leve', 'Elevação lateral com elástico leve', 'Prancha lateral curta', 'Abdominal infra leve'],
+    ['Ponte glútea leve', 'Avanço com apoio leve', 'Tríceps banco leve', 'Rosca direta elástico leve', 'Prancha abdominal curta', 'Abdominal supra leve'],
+    ['Agachamento peso corporal leve', 'Flexão de braço leve', 'Remada invertida leve', 'Rosca martelo com elástico leve', 'Prancha lateral curta', 'Elevação de pernas leve']
+  ],
+
+  // Homem - Avançado - Boa - 6 dias - academia SIM
+  "homem-avancado-boa-6-sim": [
+    ['Agachamento livre pesado', 'Panturrilha em pé com carga', 'Supino reto barra', 'Elevação lateral com halteres', 'Prancha com peso', 'Abdominal infra com carga'],
+    ['Stiff com barra', 'Mesa flexora', 'Puxada frente com pegada aberta', 'Rosca direta barra', 'Prancha lateral com peso', 'Elevação de pernas suspenso'],
+    ['Leg press unilateral', 'Glúteos polia baixa', 'Desenvolvimento com barra', 'Tríceps corda', 'Abdominal supra com carga', 'Prancha abdominal com peso'],
+    ['Cadeira extensora', 'Panturrilha sentada', 'Supino inclinado barra', 'Elevação frontal com halteres', 'Abdominal oblíquo com peso', 'Abdominal bicicleta com carga'],
+    ['Avanço com barra e peso', 'Mesa flexora', 'Remada unilateral com barra', 'Rosca martelo barra', 'Prancha com elevação de pernas com peso', 'Abdominal infra com carga'],
+    ['Agachamento sumô pesado', 'Glúteos na polia', 'Remada baixa barra', 'Tríceps testa barra', 'Abdominal prancha lateral com peso', 'Elevação de quadril com peso']
+  ],
+
+  // Homem - Avançado - Boa - 6 dias - academia NÃO
+  "homem-avancado-boa-6-nao": [
+    ['Agachamento peso corporal com salto', 'Elevação de panturrilha com carga corporal', 'Rosca direta com elástico forte', 'Desenvolvimento com elástico forte', 'Prancha abdominal longa', 'Elevação de pernas suspenso'],
+    ['Avanço sem peso com salto', 'Ponte de glúteos com uma perna', 'Tríceps testa com elástico forte', 'Flexão de braço tradicional com peso', 'Prancha lateral longa', 'Abdominal infra com peso'],
+    ['Agachamento sumô com salto', 'Mesa flexora improvisada', 'Desenvolvimento com elástico forte', 'Remada baixa com elástico forte', 'Abdominal máquina improvisada com peso', 'Elevação de pernas suspenso'],
+    ['Agachamento unilateral com salto', 'Flexão de braço tradicional', 'Remada invertida com elástico forte', 'Elevação lateral com elástico forte', 'Prancha lateral longa', 'Abdominal infra com peso'],
+    ['Ponte glútea com elevação', 'Avanço com apoio', 'Tríceps banco com peso', 'Rosca direta elástico forte', 'Prancha abdominal longa', 'Abdominal supra com peso'],
+    ['Agachamento peso corporal', 'Flexão de braço com peso', 'Remada invertida', 'Rosca martelo com elástico forte', 'Prancha lateral longa', 'Elevação de pernas com peso']
+  ],
+
+  // Mulher - Iniciante - Boa - 6 dias - academia SIM
+  "mulher-iniciante-boa-6-sim": [
+    ['Leg press', 'Panturrilha em pé', 'Supino com halteres', 'Elevação lateral', 'Abdominal prancha', 'Abdominal infra'],
+    ['Agachamento livre', 'Mesa flexora', 'Puxada frontal', 'Rosca direta com halteres', 'Prancha lateral', 'Elevação de pernas'],
+    ['Stiff com halteres', 'Remada baixa', 'Desenvolvimento com halteres', 'Tríceps corda', 'Abdominal supra', 'Prancha abdominal'],
+    ['Cadeira extensora', 'Panturrilha sentada', 'Supino inclinado', 'Elevação frontal', 'Abdominal oblíquo', 'Abdominal bicicleta'],
+    ['Agachamento sumô', 'Mesa flexora', 'Puxada alta', 'Rosca martelo', 'Prancha com elevação de pernas', 'Abdominal infra'],
+    ['Leg press unilateral', 'Glúteos na polia', 'Remada unilateral', 'Tríceps banco', 'Abdominal prancha lateral', 'Elevação de quadril']
+  ],
+
+  // Mulher - Iniciante - Boa - 6 dias - academia NÃO
+  "mulher-iniciante-boa-6-nao": [
+    ['Agachamento peso corporal', 'Elevação de panturrilha no degrau', 'Flexão de braço com joelhos', 'Rosca com elástico', 'Prancha estática', 'Abdominal infra'],
+    ['Avanço sem peso', 'Ponte de glúteos', 'Remada invertida com elástico', 'Tríceps testa com elástico', 'Prancha lateral', 'Abdominal bicicleta'],
+    ['Agachamento sumô', 'Mesa flexora improvisada', 'Desenvolvimento com elástico', 'Remada baixa com elástico', 'Abdominal prancha', 'Elevação de pernas'],
+    ['Agachamento unilateral', 'Flexão de braço tradicional', 'Remada invertida com elástico', 'Elevação lateral com elástico', 'Prancha lateral', 'Abdominal supra'],
+    ['Ponte glútea', 'Avanço com apoio', 'Tríceps banco', 'Rosca direta com elástico', 'Prancha abdominal', 'Abdominal oblíquo'],
+    ['Agachamento peso corporal', 'Flexão de braço', 'Remada invertida', 'Rosca martelo com elástico', 'Prancha lateral', 'Elevação de pernas']
+  ],
+
+  // Mulher - Intermediário - Boa - 6 dias - academia SIM
+  "mulher-intermediario-boa-6-sim": [
+    ['Agachamento livre', 'Panturrilha em pé', 'Supino reto barra', 'Elevação lateral', 'Prancha com toque no ombro', 'Abdominal infra'],
+    ['Stiff', 'Mesa flexora', 'Puxada frente', 'Rosca direta barra', 'Prancha lateral', 'Elevação de pernas'],
+    ['Leg press', 'Glúteos polia baixa', 'Desenvolvimento com halteres', 'Tríceps corda', 'Abdominal supra', 'Prancha abdominal'],
+    ['Cadeira extensora', 'Panturrilha sentada', 'Supino inclinado', 'Elevação frontal', 'Abdominal oblíquo', 'Abdominal bicicleta'],
+    ['Avanço com barra', 'Mesa flexora', 'Remada unilateral', 'Rosca martelo', 'Prancha com elevação de pernas', 'Abdominal infra'],
+    ['Agachamento sumô', 'Glúteos na polia', 'Remada baixa', 'Tríceps testa', 'Abdominal prancha lateral', 'Elevação de quadril']
+  ],
+
+  // Mulher - Intermediário - Boa - 6 dias - academia NÃO
+  "mulher-intermediario-boa-6-nao": [
+    ['Agachamento peso corporal', 'Elevação de panturrilha no degrau', 'Rosca direta com elástico', 'Desenvolvimento com elástico', 'Prancha abdominal curta', 'Elevação de pernas leve'],
+    ['Avanço sem peso', 'Ponte de glúteos', 'Tríceps testa com elástico', 'Flexão de braço leve', 'Prancha lateral curta', 'Abdominal infra leve'],
+    ['Agachamento sumô leve', 'Mesa flexora improvisada leve', 'Desenvolvimento com elástico leve', 'Remada baixa com elástico leve', 'Abdominal máquina improvisada leve', 'Elevação de pernas leve'],
+    ['Agachamento unilateral leve', 'Flexão de braço com joelhos leve', 'Remada invertida com elástico leve', 'Elevação lateral com elástico leve', 'Prancha lateral curta', 'Abdominal infra leve'],
+    ['Ponte glútea leve', 'Avanço com apoio leve', 'Tríceps banco leve', 'Rosca direta elástico leve', 'Prancha abdominal curta', 'Abdominal supra leve'],
+    ['Agachamento peso corporal leve', 'Flexão de braço leve', 'Remada invertida leve', 'Rosca martelo com elástico leve', 'Prancha lateral curta', 'Elevação de pernas leve']
+  ],
+
+  // Mulher - Avançado - Boa - 6 dias - academia SIM
+  "mulher-avancado-boa-6-sim": [
+    ['Agachamento livre pesado', 'Panturrilha em pé com carga', 'Supino reto barra', 'Elevação lateral com halteres', 'Prancha com peso', 'Abdominal infra com carga'],
+    ['Stiff com barra', 'Mesa flexora', 'Puxada frente com pegada aberta', 'Rosca direta barra', 'Prancha lateral com peso', 'Elevação de pernas suspenso'],
+    ['Leg press unilateral', 'Glúteos polia baixa', 'Desenvolvimento com barra', 'Tríceps corda', 'Abdominal supra com carga', 'Prancha abdominal com peso'],
+    ['Cadeira extensora', 'Panturrilha sentada', 'Supino inclinado barra', 'Elevação frontal com halteres', 'Abdominal oblíquo com peso', 'Abdominal bicicleta com carga'],
+    ['Avanço com barra e peso', 'Mesa flexora', 'Remada unilateral com barra', 'Rosca martelo barra', 'Prancha com elevação de pernas com peso', 'Abdominal infra com carga'],
+    ['Agachamento sumô pesado', 'Glúteos na polia', 'Remada baixa barra', 'Tríceps testa barra', 'Abdominal prancha lateral com peso', 'Elevação de quadril com peso']
+  ],
+
+  // Mulher - Avançado - Boa - 6 dias - academia NÃO
+  "mulher-avancado-boa-6-nao": [
+    ['Agachamento peso corporal com salto', 'Elevação de panturrilha com carga corporal', 'Rosca direta com elástico forte', 'Desenvolvimento com elástico forte', 'Prancha abdominal longa', 'Elevação de pernas suspenso'],
+    ['Avanço sem peso com salto', 'Ponte de glúteos com uma perna', 'Tríceps testa com elástico forte', 'Flexão de braço tradicional com peso', 'Prancha lateral longa', 'Abdominal infra com peso'],
+    ['Agachamento sumô com salto', 'Mesa flexora improvisada', 'Desenvolvimento com elástico forte', 'Remada baixa com elástico forte', 'Abdominal máquina improvisada com peso', 'Elevação de pernas suspenso'],
+    ['Agachamento unilateral com salto', 'Flexão de braço tradicional', 'Remada invertida com elástico forte', 'Elevação lateral com elástico forte', 'Prancha lateral longa', 'Abdominal infra com peso'],
+    ['Ponte glútea com elevação', 'Avanço com apoio', 'Tríceps banco com peso', 'Rosca direta elástico forte', 'Prancha abdominal longa', 'Abdominal supra com peso'],
+    ['Agachamento peso corporal', 'Flexão de braço com peso', 'Remada invertida', 'Rosca martelo com elástico forte', 'Prancha lateral longa', 'Elevação de pernas com peso']
+  ],
+
+  // Agora as combinações para condição mediana e ruim
+
+  // Homem - Iniciante - Mediana - 6 dias - academia SIM
+  "homem-iniciante-mediana-6-sim": [
+    ['Leg press leve', 'Panturrilha em pé leve', 'Supino reto com halteres leve', 'Elevação lateral leve', 'Abdominal prancha curta', 'Abdominal infra leve'],
+    ['Agachamento livre leve', 'Mesa flexora leve', 'Puxada frontal leve', 'Rosca direta com barra leve', 'Prancha lateral curta', 'Elevação de pernas leve'],
+    ['Stiff com halteres leve', 'Remada baixa leve', 'Desenvolvimento com halteres leve', 'Tríceps corda leve', 'Abdominal supra leve', 'Prancha abdominal curta'],
+    ['Cadeira extensora leve', 'Panturrilha sentada leve', 'Supino inclinado leve', 'Elevação frontal leve', 'Abdominal oblíquo leve', 'Abdominal bicicleta leve'],
+    ['Agachamento sumô leve', 'Mesa flexora leve', 'Puxada alta leve', 'Rosca martelo leve', 'Prancha com elevação de pernas leve', 'Abdominal infra leve'],
+    ['Leg press unilateral leve', 'Glúteos na polia leve', 'Remada unilateral leve', 'Tríceps banco leve', 'Abdominal prancha lateral leve', 'Elevação de quadril leve']
+  ],
+
+  // Homem - Iniciante - Mediana - 6 dias - academia NÃO
+  "homem-iniciante-mediana-6-nao": [
+    ['Agachamento peso corporal leve', 'Elevação de panturrilha no degrau leve', 'Flexão de braço com joelhos leve', 'Rosca com elástico leve', 'Prancha estática leve', 'Abdominal infra leve'],
+    ['Avanço sem peso leve', 'Ponte de glúteos leve', 'Remada invertida com elástico leve', 'Tríceps testa com elástico leve', 'Prancha lateral leve', 'Abdominal bicicleta leve'],
+    ['Agachamento sumô leve', 'Mesa flexora improvisada leve', 'Desenvolvimento com elástico leve', 'Remada baixa com elástico leve', 'Abdominal prancha leve', 'Elevação de pernas leve'],
+    ['Agachamento unilateral leve', 'Flexão de braço tradicional leve', 'Remada invertida com elástico leve', 'Elevação lateral com elástico leve', 'Prancha lateral leve', 'Abdominal supra leve'],
+    ['Ponte glútea leve', 'Avanço com apoio leve', 'Tríceps banco leve', 'Rosca direta com elástico leve', 'Prancha abdominal leve', 'Abdominal oblíquo leve'],
+    ['Agachamento peso corporal leve', 'Flexão de braço leve', 'Remada invertida leve', 'Rosca martelo com elástico leve', 'Prancha lateral leve', 'Elevação de pernas leve']
+  ],
+
+  // Homem - Intermediário - Mediana - 6 dias - academia SIM
+  "homem-intermediario-mediana-6-sim": [
+    ['Agachamento livre leve', 'Panturrilha em pé leve', 'Supino reto barra leve', 'Elevação lateral leve', 'Prancha com toque no ombro leve', 'Abdominal infra leve'],
+    ['Stiff leve', 'Mesa flexora leve', 'Puxada frente leve', 'Rosca direta barra leve', 'Prancha lateral leve', 'Elevação de pernas leve'],
+    ['Leg press leve', 'Glúteos polia baixa leve', 'Desenvolvimento com halteres leve', 'Tríceps corda leve', 'Abdominal supra leve', 'Prancha abdominal leve'],
+    ['Cadeira extensora leve', 'Panturrilha sentada leve', 'Supino inclinado leve', 'Elevação frontal leve', 'Abdominal oblíquo leve', 'Abdominal bicicleta leve'],
+    ['Avanço com barra leve', 'Mesa flexora leve', 'Remada unilateral leve', 'Rosca martelo leve', 'Prancha com elevação de pernas leve', 'Abdominal infra leve'],
+    ['Agachamento sumô leve', 'Glúteos na polia leve', 'Remada baixa leve', 'Tríceps testa leve', 'Abdominal prancha lateral leve', 'Elevação de quadril leve']
+  ],
+
+  // Homem - Intermediário - Mediana - 6 dias - academia NÃO
+  "homem-intermediario-mediana-6-nao": [
+    ['Agachamento peso corporal leve', 'Elevação de panturrilha no degrau leve', 'Rosca direta com elástico leve', 'Desenvolvimento com elástico leve', 'Prancha abdominal curta leve', 'Elevação de pernas leve'],
+    ['Avanço sem peso leve', 'Ponte de glúteos leve', 'Tríceps testa com elástico leve', 'Flexão de braço leve', 'Prancha lateral curta leve', 'Abdominal infra leve'],
+    ['Agachamento sumô leve', 'Mesa flexora improvisada leve', 'Desenvolvimento com elástico leve', 'Remada baixa com elástico leve', 'Abdominal máquina improvisada leve', 'Elevação de pernas leve'],
+    ['Agachamento unilateral leve', 'Flexão de braço com joelhos leve', 'Remada invertida com elástico leve', 'Elevação lateral com elástico leve', 'Prancha lateral curta leve', 'Abdominal infra leve'],
+    ['Ponte glútea leve', 'Avanço com apoio leve', 'Tríceps banco leve', 'Rosca direta elástico leve', 'Prancha abdominal leve', 'Abdominal supra leve'],
+    ['Agachamento peso corporal leve', 'Flexão de braço leve', 'Remada invertida leve', 'Rosca martelo com elástico leve', 'Prancha lateral curta leve', 'Elevação de pernas leve']
+  ],
+
+  // Homem - Avançado - Mediana - 6 dias - academia SIM
+  "homem-avancado-mediana-6-sim": [
+    ['Agachamento livre moderado', 'Panturrilha em pé moderado', 'Supino reto barra moderado', 'Elevação lateral moderado', 'Prancha com peso moderado', 'Abdominal infra moderado'],
+    ['Stiff moderado', 'Mesa flexora moderado', 'Puxada frente moderado', 'Rosca direta barra moderado', 'Prancha lateral moderado', 'Elevação de pernas moderado'],
+    ['Leg press moderado', 'Glúteos polia baixa moderado', 'Desenvolvimento com halteres moderado', 'Tríceps corda moderado', 'Abdominal supra moderado', 'Prancha abdominal moderado'],
+    ['Cadeira extensora moderado', 'Panturrilha sentada moderado', 'Supino inclinado moderado', 'Elevação frontal moderado', 'Abdominal oblíquo moderado', 'Abdominal bicicleta moderado'],
+    ['Avanço com barra moderado', 'Mesa flexora moderado', 'Remada unilateral moderado', 'Rosca martelo moderado', 'Prancha com elevação de pernas moderado', 'Abdominal infra moderado'],
+    ['Agachamento sumô moderado', 'Glúteos na polia moderado', 'Remada baixa moderado', 'Tríceps testa moderado', 'Abdominal prancha lateral moderado', 'Elevação de quadril moderado']
+  ],
+
+  // Homem - Avançado - Mediana - 6 dias - academia NÃO
+  "homem-avancado-mediana-6-nao": [
+    ['Agachamento peso corporal moderado', 'Elevação de panturrilha no degrau moderado', 'Rosca direta com elástico moderado', 'Desenvolvimento com elástico moderado', 'Prancha abdominal longa moderado', 'Elevação de pernas moderado'],
+    ['Avanço sem peso moderado', 'Ponte de glúteos moderado', 'Tríceps testa com elástico moderado', 'Flexão de braço moderado', 'Prancha lateral longa moderado', 'Abdominal infra moderado'],
+    ['Agachamento sumô moderado', 'Mesa flexora improvisada moderado', 'Desenvolvimento com elástico moderado', 'Remada baixa com elástico moderado', 'Abdominal máquina improvisada moderado', 'Elevação de pernas moderado'],
+    ['Agachamento unilateral moderado', 'Flexão de braço tradicional moderado', 'Remada invertida com elástico moderado', 'Elevação lateral com elástico moderado', 'Prancha lateral longa moderado', 'Abdominal infra moderado'],
+    ['Ponte glútea moderado', 'Avanço com apoio moderado', 'Tríceps banco moderado', 'Rosca direta elástico moderado', 'Prancha abdominal moderado', 'Abdominal supra moderado'],
+    ['Agachamento peso corporal moderado', 'Flexão de braço moderado', 'Remada invertida moderado', 'Rosca martelo com elástico moderado', 'Prancha lateral longa moderado', 'Elevação de pernas moderado']
+  ],
+
+  // Mulher - Iniciante - Mediana - 6 dias - academia SIM
+  "mulher-iniciante-mediana-6-sim": [
+    ['Leg press leve', 'Panturrilha em pé leve', 'Supino com halteres leve', 'Elevação lateral leve', 'Abdominal prancha curta', 'Abdominal infra leve'],
+    ['Agachamento livre leve', 'Mesa flexora leve', 'Puxada frontal leve', 'Rosca direta com halteres leve', 'Prancha lateral curta', 'Elevação de pernas leve'],
+    ['Stiff com halteres leve', 'Remada baixa leve', 'Desenvolvimento com halteres leve', 'Tríceps corda leve', 'Abdominal supra leve', 'Prancha abdominal curta'],
+    ['Cadeira extensora leve', 'Panturrilha sentada leve', 'Supino inclinado leve', 'Elevação frontal leve', 'Abdominal oblíquo leve', 'Abdominal bicicleta leve'],
+    ['Agachamento sumô leve', 'Mesa flexora leve', 'Puxada alta leve', 'Rosca martelo leve', 'Prancha com elevação de pernas leve', 'Abdominal infra leve'],
+    ['Leg press unilateral leve', 'Glúteos na polia leve', 'Remada unilateral leve', 'Tríceps banco leve', 'Abdominal prancha lateral leve', 'Elevação de quadril leve']
+  ],
+
+  // Mulher - Iniciante - Mediana - 6 dias - academia NÃO
+  "mulher-iniciante-mediana-6-nao": [
+    ['Agachamento peso corporal leve', 'Elevação de panturrilha no degrau leve', 'Flexão de braço com joelhos leve', 'Rosca com elástico leve', 'Prancha estática leve', 'Abdominal infra leve'],
+    ['Avanço sem peso leve', 'Ponte de glúteos leve', 'Remada invertida com elástico leve', 'Tríceps testa com elástico leve', 'Prancha lateral leve', 'Abdominal bicicleta leve'],
+    ['Agachamento sumô leve', 'Mesa flexora improvisada leve', 'Desenvolvimento com elástico leve', 'Remada baixa com elástico leve', 'Abdominal prancha leve', 'Elevação de pernas leve'],
+    ['Agachamento unilateral leve', 'Flexão de braço tradicional leve', 'Remada invertida com elástico leve', 'Elevação lateral com elástico leve', 'Prancha lateral leve', 'Abdominal supra leve'],
+    ['Ponte glútea leve', 'Avanço com apoio leve', 'Tríceps banco leve', 'Rosca direta com elástico leve', 'Prancha abdominal leve', 'Abdominal oblíquo leve'],
+    ['Agachamento peso corporal leve', 'Flexão de braço leve', 'Remada invertida leve', 'Rosca martelo com elástico leve', 'Prancha lateral leve', 'Elevação de pernas leve']
+  ],
+
+  // Mulher - Intermediário - Mediana - 6 dias - academia SIM
+  "mulher-intermediario-mediana-6-sim": [
+    ['Agachamento livre leve', 'Panturrilha em pé leve', 'Supino reto barra leve', 'Elevação lateral leve', 'Prancha com toque no ombro leve', 'Abdominal infra leve'],
+    ['Stiff leve', 'Mesa flexora leve', 'Puxada frente leve', 'Rosca direta barra leve', 'Prancha lateral leve', 'Elevação de pernas leve'],
+    ['Leg press leve', 'Glúteos polia baixa leve', 'Desenvolvimento com halteres leve', 'Tríceps corda leve', 'Abdominal supra leve', 'Prancha abdominal leve'],
+    ['Cadeira extensora leve', 'Panturrilha sentada leve', 'Supino inclinado leve', 'Elevação frontal leve', 'Abdominal oblíquo leve', 'Abdominal bicicleta leve'],
+    ['Avanço com barra leve', 'Mesa flexora leve', 'Remada unilateral leve', 'Rosca martelo leve', 'Prancha com elevação de pernas leve', 'Abdominal infra leve'],
+    ['Agachamento sumô leve', 'Glúteos na polia leve', 'Remada baixa leve', 'Tríceps testa leve', 'Abdominal prancha lateral leve', 'Elevação de quadril leve']
+  ],
+
+  // Mulher - Intermediário - Mediana - 6 dias - academia NÃO
+  "mulher-intermediario-mediana-6-nao": [
+    ['Agachamento peso corporal leve', 'Elevação de panturrilha no degrau leve', 'Rosca direta com elástico leve', 'Desenvolvimento com elástico leve', 'Prancha abdominal curta leve', 'Elevação de pernas leve'],
+    ['Avanço sem peso leve', 'Ponte de glúteos leve', 'Tríceps testa com elástico leve', 'Flexão de braço leve', 'Prancha lateral curta leve', 'Abdominal infra leve'],
+    ['Agachamento sumô leve', 'Mesa flexora improvisada leve', 'Desenvolvimento com elástico leve', 'Remada baixa com elástico leve', 'Abdominal máquina improvisada leve', 'Elevação de pernas leve'],
+    ['Agachamento unilateral leve', 'Flexão de braço com joelhos leve', 'Remada invertida com elástico leve', 'Elevação lateral com elástico leve', 'Prancha lateral curta leve', 'Abdominal infra leve'],
+    ['Ponte glútea leve', 'Avanço com apoio leve', 'Tríceps banco leve', 'Rosca direta elástico leve', 'Prancha abdominal leve', 'Abdominal supra leve'],
+    ['Agachamento peso corporal leve', 'Flexão de braço leve', 'Remada invertida leve', 'Rosca martelo com elástico leve', 'Prancha lateral curta leve', 'Elevação de pernas leve']
+  ],
+
+  // Mulher - Avançado - Mediana - 6 dias - academia SIM
+  "mulher-avancado-mediana-6-sim": [
+    ['Agachamento livre moderado', 'Panturrilha em pé moderado', 'Supino reto barra moderado', 'Elevação lateral moderado', 'Prancha com peso moderado', 'Abdominal infra moderado'],
+    ['Stiff moderado', 'Mesa flexora moderado', 'Puxada frente moderado', 'Rosca direta barra moderado', 'Prancha lateral moderado', 'Elevação de pernas moderado'],
+    ['Leg press moderado', 'Glúteos polia baixa moderado', 'Desenvolvimento com halteres moderado', 'Tríceps corda moderado', 'Abdominal supra moderado', 'Prancha abdominal moderado'],
+    ['Cadeira extensora moderado', 'Panturrilha sentada moderado', 'Supino inclinado moderado', 'Elevação frontal moderado', 'Abdominal oblíquo moderado', 'Abdominal bicicleta moderado'],
+    ['Avanço com barra moderado', 'Mesa flexora moderado', 'Remada unilateral moderado', 'Rosca martelo moderado', 'Prancha com elevação de pernas moderado', 'Abdominal infra moderado'],
+    ['Agachamento sumô moderado', 'Glúteos na polia moderado', 'Remada baixa moderado', 'Tríceps testa moderado', 'Abdominal prancha lateral moderado', 'Elevação de quadril moderado']
+  ],
+
+  // Mulher - Avançado - Mediana - 6 dias - academia NÃO
+  "mulher-avancado-mediana-6-nao": [
+    ['Agachamento peso corporal moderado', 'Elevação de panturrilha no degrau moderado', 'Rosca direta com elástico moderado', 'Desenvolvimento com elástico moderado', 'Prancha abdominal longa moderado', 'Elevação de pernas moderado'],
+    ['Avanço sem peso moderado', 'Ponte de glúteos moderado', 'Tríceps testa com elástico moderado', 'Flexão de braço moderado', 'Prancha lateral longa moderado', 'Abdominal infra moderado'],
+    ['Agachamento sumô moderado', 'Mesa flexora improvisada moderado', 'Desenvolvimento com elástico moderado', 'Remada baixa com elástico moderado', 'Abdominal máquina improvisada moderado', 'Elevação de pernas moderado'],
+    ['Agachamento unilateral moderado', 'Flexão de braço tradicional moderado', 'Remada invertida com elástico moderado', 'Elevação lateral com elástico moderado', 'Prancha lateral longa moderado', 'Abdominal infra moderado'],
+    ['Ponte glútea moderado', 'Avanço com apoio moderado', 'Tríceps banco moderado', 'Rosca direta elástico moderado', 'Prancha abdominal moderado', 'Abdominal supra moderado'],
+    ['Agachamento peso corporal moderado', 'Flexão de braço moderado', 'Remada invertida moderado', 'Rosca martelo com elástico moderado', 'Prancha lateral longa moderado', 'Elevação de pernas moderado']
+  ],
 };
 
 const descricoesExercicios = {
