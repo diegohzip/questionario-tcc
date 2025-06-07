@@ -1035,6 +1035,23 @@ const fichas = {
     ['Ponte glútea moderado', 'Avanço com apoio moderado', 'Tríceps banco moderado', 'Rosca direta elástico moderado', 'Prancha abdominal moderado', 'Abdominal supra moderado'],
     ['Agachamento peso corporal moderado', 'Flexão de braço moderado', 'Remada invertida moderado', 'Rosca martelo com elástico moderado', 'Prancha lateral longa moderado', 'Elevação de pernas moderado']
   ],
+
+  "homem-avancado-ruim-6-nao": [
+    ["Alongamento", "Agachamento isométrico", "Tríceps banco", "Remada unilateral com mochila", "Prancha", "Abdominal"],
+    ["Stiff com mochila", "Afundo", "Rosca com mochila", "Elevação lateral com garrafa", "Canivete", "Abdominal infra"],
+    ["Agachamento isométrico", "Flexão de braço", "Remada unilateral com mochila", "Tríceps banco", "Abdominal", "Prancha lateral"],
+    ["Panturrilha no degrau", "Agachamento livre", "Rosca com mochila", "Elevação lateral com garrafa", "Prancha lateral", "Abdominal"],
+    ["Stiff com mochila", "Panturrilha no degrau", "Tríceps banco", "Flexão de braço", "Abdominal infra", "Canivete"],
+    ["Afundo", "Stiff com mochila", "Flexão de braço", "Rosca com mochila", "Abdominal", "Prancha"]
+  ],
+  "homem-avancado-ruim-6-sim": [
+    ["Alongamento", "Agachamento isométrico", "Tríceps banco", "Remada unilateral com mochila", "Prancha", "Abdominal"],
+    ["Stiff com mochila", "Afundo", "Rosca com mochila", "Elevação lateral com garrafa", "Canivete", "Abdominal infra"],
+    ["Agachamento isométrico", "Flexão de braço", "Remada unilateral com mochila", "Tríceps banco", "Abdominal", "Prancha lateral"],
+    ["Panturrilha no degrau", "Agachamento livre", "Rosca com mochila", "Elevação lateral com garrafa", "Prancha lateral", "Abdominal"],
+    ["Stiff com mochila", "Panturrilha no degrau", "Tríceps banco", "Flexão de braço", "Abdominal infra", "Canivete"],
+    ["Afundo", "Stiff com mochila", "Flexão de braço", "Rosca com mochila", "Abdominal", "Prancha"]
+  ],
 };
 
 const descricoesExercicios = {
@@ -1053,12 +1070,20 @@ const descricoesExercicios = {
   "Rosca direta": "Com barra ou halteres, flexione os cotovelos elevando o peso até a altura dos ombros e retorne lentamente.",
   "Remada curvada": "Com barra, flexione o tronco para frente, puxe a barra em direção ao abdômen contraindo as costas e volte controladamente.",
   "Puxada frontal": "Na polia alta, puxe a barra até a altura do peito, contraindo as costas e retornando devagar.",
-  "Cadeira abdutora": "Sentado na máquina, abra as pernas contra a resistência para trabalhar os músculos abdutores e retorne lentamente.",
-  "Cadeira adutora": "Sentado na máquina, junte as pernas contra a resistência para trabalhar os músculos adutores e volte controladamente.",
-  "Flexão de braço": "Deitado de barriga para baixo, apoie as mãos no chão e empurre o corpo para cima estendendo os braços, depois retorne flexionando-os.",
-  "Abdominal tradicional": "Deitado de costas, flexione o tronco levando o peito em direção aos joelhos e retorne lentamente.",
-  "Elevação de quadril": "Deitado de costas com os pés apoiados, eleve o quadril contraindo glúteos e retorne à posição inicial.",
-  "Stiff": "Com barra ou halteres, mantenha as pernas semi-flexionadas, incline o tronco para frente com a coluna reta, e volte à posição ereta.",
-  "Mesa flexora": "A mesa flexora é um equipamento para fortalecer os músculos posteriores da coxa. Sente-se com o abdômen firme, ajuste o apoio sobre os tornozelos e flexione os joelhos contra a resistência, controlando o movimento na subida e descida para evitar lesões."
 };
 
+const linksYoutube = {
+    "Agachamento livre": "https://www.youtube.com/watch?v=1xMaFs0L3ao",
+    "Leg press": "https://www.youtube.com/watch?v=IZxyjW7MPJQ",
+    "Supino reto": "https://www.youtube.com/watch?v=rT7DgCr-3pg",
+    "Rosca direta": "https://www.youtube.com/watch?v=kwG2ipFRgfo",
+    "Elevação lateral": "https://www.youtube.com/watch?v=kDqklk1ZESo",
+    "Panturrilha em pé": "https://www.youtube.com/watch?v=-M4-G8p8fmc",
+    "Tríceps corda": "https://www.youtube.com/watch?v=vB5OHsJ3EME",
+    "Stiff": "https://www.youtube.com/watch?v=3B2CAVOe3Fg",
+    "Desenvolvimento com halteres": "https://www.youtube.com/watch?v=B-aVuyhvLHU",
+    "Abdominal máquina": "https://www.youtube.com/watch?v=vPKXFarXbys",
+    "Abdominal oblíquo": "https://www.youtube.com/watch?v=OSiN1iwu3A4",
+    "Prancha": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
+    "Prancha lateral": "https://www.youtube.com/watch?v=K2VljzCC16g"
+  };

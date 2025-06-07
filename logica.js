@@ -151,21 +151,7 @@ const fecharPopup = document.getElementById("fecharPopup");
 
 function mostrarDescricaoExercicio(exercicio) {
   const descricao = descricoesExercicios[exercicio] || "Descrição não disponível.";
-  const linksYoutube = {
-    "Agachamento livre": "https://www.youtube.com/watch?v=1xMaFs0L3ao",
-    "Leg press": "https://www.youtube.com/watch?v=IZxyjW7MPJQ",
-    "Supino reto": "https://www.youtube.com/watch?v=rT7DgCr-3pg",
-    "Rosca direta": "https://www.youtube.com/watch?v=kwG2ipFRgfo",
-    "Elevação lateral": "https://www.youtube.com/watch?v=kDqklk1ZESo",
-    "Panturrilha em pé": "https://www.youtube.com/watch?v=-M4-G8p8fmc",
-    "Tríceps corda": "https://www.youtube.com/watch?v=vB5OHsJ3EME",
-    "Stiff": "https://www.youtube.com/watch?v=3B2CAVOe3Fg",
-    "Desenvolvimento com halteres": "https://www.youtube.com/watch?v=B-aVuyhvLHU",
-    "Abdominal máquina": "https://www.youtube.com/watch?v=vPKXFarXbys",
-    "Abdominal oblíquo": "https://www.youtube.com/watch?v=OSiN1iwu3A4",
-    "Prancha": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
-    "Prancha lateral": "https://www.youtube.com/watch?v=K2VljzCC16g"
-  };
+  
   const videoLink = linksYoutube[exercicio] || "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
   descricaoTexto.innerHTML = `
@@ -187,3 +173,15 @@ popup.addEventListener("click", (event) => {
     popup.classList.remove("show");
   }
 });
+
+/* verifica login */
+
+// Simulação de login
+const usuarioLogado = true; // Troque para `true` para simular login
+
+const areaUsuario = document.getElementById("areaUsuario");
+if (usuarioLogado) {
+  areaUsuario.innerHTML = `<span>👤 Meu Perfil</span>`;
+} else {
+  areaUsuario.innerHTML = `<span>Login</span>`;
+}
